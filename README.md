@@ -17,10 +17,10 @@ This repository holds no source code. It is the place to tell the developer what
 ## What makes a report fixable
 
 - **A screen recording.** Most Panes problems are about what the screen does; a recording says more than a description.
-- **The log.** In Panes settings open **Help & feedback → Export logs** right after the problem happens, and attach the file from your Download folder. Exporting needs root access (grant it to Panes in Magisk, KernelSU or APatch).
+- **The log.** In Panes settings open **Help & feedback → Report a bug** right after the problem happens. Panes saves a small zip to your Download folder and opens the bug form with your phone and version filled in; drag the zip into the issue. Exporting needs root access (grant it to Panes in Magisk, KernelSU or APatch).
 - **Your device.** Phone model, ROM name and version, Android version, Panes version.
 
-The log holds only Panes's own steps: which windows it moved and when. It contains nothing from inside your apps. Issues here are public, so please check a recording for anything private before you attach it.
+The zip holds Panes's own log (which windows it moved and when) and the make-up of your phone: model, system version, display, the LSPosed log. It does not include your app list, your notifications or anything from inside your apps. Issues here are public, so please check a recording for anything private before you attach it.
 
 ## Unlock and payment questions
 

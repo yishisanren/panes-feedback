@@ -57,7 +57,7 @@ body:
     id: files
     attributes:
       label: Screen recording and log
-      description: "Drag files here. Log: Panes settings → Help & feedback → Export logs, right after the problem happens; the file is saved in your Download folder."
+      description: "Drag files here. Log: Panes settings → Help & feedback → Report a bug saves a small zip (Panes_report_….zip) to your Download folder."
   - type: checkboxes
     id: checks
     attributes:
