@@ -1,0 +1,69 @@
+name: Bug report
+description: Something in Panes does not work as it should
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. A screen recording and the exported log make most problems fixable in one round.
+        Issues are public: check your recording for anything private before attaching it.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what Panes did instead.
+      placeholder: "1. Open the workbench\n2. Tap a side pane\n3. The main pane goes black"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Panes version
+      description: Shown on the Panes settings home page.
+      placeholder: "4.0.8"
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Phone model
+      placeholder: "Xiaomi 15, Galaxy Z Fold6, OnePlus 13 …"
+    validations:
+      required: true
+  - type: input
+    id: rom
+    attributes:
+      label: ROM and Android version
+      placeholder: "HyperOS 3.0.2 (Android 16), One UI 8, OxygenOS 16 …"
+    validations:
+      required: true
+  - type: input
+    id: root
+    attributes:
+      label: Root and LSPosed
+      placeholder: "KernelSU 1.0.5 + LSPosed 2.2.1"
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does it happen?
+      options:
+        - Every time
+        - Often
+        - Sometimes
+        - Happened once
+    validations:
+      required: true
+  - type: textarea
+    id: files
+    attributes:
+      label: Screen recording and log
+      description: "Drag files here. Log: Panes settings → Help & feedback → Export logs, right after the problem happens; the file is saved in your Download folder."
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checked first
+      options:
+        - label: I am on the latest version and rebooted after installing it
+          required: true
+        - label: System Framework and System UI are ticked for Panes in LSPosed
+          required: true

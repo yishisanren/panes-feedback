@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Download the latest version
+    url: https://github.com/Xposed-Modules-Repo/io.github.yishisanren.panes/releases
+    about: Releases are published in the LSPosed module repository.

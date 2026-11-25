@@ -1,0 +1,34 @@
+name: Unlock or payment
+description: A problem with an unlock code, a PayPal payment or a refund
+labels: ["unlock"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue is public. Do not post your email address or full payment details.
+        The machine code is safe to share: it cannot be turned back into your phone's identifiers.
+  - type: textarea
+    id: what
+    attributes:
+      label: What went wrong?
+      description: For example "paid but no code was shown", or the exact message Panes shows when you paste the code.
+    validations:
+      required: true
+  - type: input
+    id: machine
+    attributes:
+      label: Machine code
+      description: Panes settings → Unlock Panes → Machine code.
+    validations:
+      required: true
+  - type: input
+    id: paid
+    attributes:
+      label: When did you pay?
+      description: Date and approximate time, with your time zone. Leave empty if you have not paid.
+  - type: input
+    id: version
+    attributes:
+      label: Panes version and phone model
+    validations:
+      required: true
